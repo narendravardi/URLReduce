@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A Free opensource URL Shortener">
+		<meta name="author" content="Narendra Vardi">
+		<title>URLReduce</title>
+		<link rel="stylesheet" href="../static/custom.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="https://url-reduce.herokuapp.com">URLReduce</a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li><a href="https://github.com/narendravardi/URLReduce/blob/master/README.md" target="_blank">About</a></li>
+			  <li><a href="https://github.com/narendravardi/URLReduce" target="_blank">Implementation</a></li>
+			</ul>
+		  </div>
+		</nav>
+		<div class="page-header">
+			<h1 align="center">URLReduce</h1>
+		</div>
+		{% block shorten_url %}{% endblock %}
+		{% block display_shorten_url %}{% endblock %}
+		<footer class="footer">
+		  <div class="container">
+			<p class="text-muted" target="_blank">Developed by <a href="https://www.linkedin.com/in/narendravardi">Narendra Vardi</a></p>
+		  </div>
+		</footer>
+	</body>
+</html>
